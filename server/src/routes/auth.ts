@@ -3,7 +3,6 @@ import { User } from '../models/Users';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { authMiddleware, verifyTokenWithZod } from '../middleware/authMiddleware';
-import { create } from 'domain';
 
 const router = Router();
 

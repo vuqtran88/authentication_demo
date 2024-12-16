@@ -1,11 +1,7 @@
-import { Request, Response, NextFunction, RequestHandler } from 'express';
+import { RequestHandler } from 'express';
 import jwt from 'jsonwebtoken';
-import { IUser } from '../models/Users';
-import { z, ZodRawShape } from 'zod';
-
-interface CustomRequest extends Request {
-    user?: IUser | null;
-}
+import { z } from 'zod';
+import { CustomRequest, IUser } from '../../types';
 
 const userSchema = z.object({
     userName: z.string(),

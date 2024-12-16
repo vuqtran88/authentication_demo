@@ -1,15 +1,6 @@
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
-
-export interface IUser {
-    userName: string;
-    firstName: string;
-    lastName: string;
-    email: string;
-    password: string;
-    role: string;
-    createdAt: Date;
-}
+import { IUser } from "../../types";
 
 const UserSchema = new mongoose.Schema<IUser>({
     userName: {
