@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Next.js: Debug (Launch)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "yarn", // Or "npm" if you prefer npm
+      "runtimeArgs": ["dev"], // Matches the "dev" script in package.json
+      "cwd": "${workspaceFolder}", // The client folder
+      "console": "integratedTerminal", // Runs in the terminal
+      "sourceMaps": true,
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "name": "Next.js: Debug (Attach)",
+      "type": "node",
+      "request": "attach",
+      "cwd": "${workspaceFolder}",
+      "restart": true,
+    }
+  ]
+}

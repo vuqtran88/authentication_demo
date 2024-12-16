@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "compounds": [
+      {
+        "name": "Debug Client and Server",
+        "configurations": [
+          "Debug Client",
+          "Debug Server"
+        ]
+      }
+    ],
+    "configurations": [
+      {
+        "name": "Debug Client",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "yarn",
+        "runtimeArgs": ["dev"],
+        "cwd": "${workspaceFolder}/client",
+        "console": "integratedTerminal",
+        "sourceMaps": true
+      },
+      {
+        "name": "Debug Server",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "yarn",
+        "runtimeArgs": ["run", "dev"],
+        "cwd": "${workspaceFolder}/server",
+        "console": "integratedTerminal"
+      }
+    ]
+  }

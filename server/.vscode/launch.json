@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Server (Start Script)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "yarn", // Or use "npm" if you prefer npm
+      "runtimeArgs": ["run", "dev"], // Matches the "debug" script in package.json
+      "cwd": "${workspaceFolder}", // The server folder
+      "console": "integratedTerminal" // Runs in the VS Code terminal
+    }
+  ]
+}

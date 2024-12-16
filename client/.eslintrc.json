@@ -1,0 +1,24 @@
+// {
+//   "extends": ["next/core-web-vitals", "next/typescript"],
+//   "rules": {
+//     "no-console": "off",
+//     "no-unused-vars": "off",
+//     "no-undef": "warn",
+//     "no-unreachable": "warn",
+//     "no-constant-condition": "warn",
+//     "no-empty": "warn",
+//     "no-irregular-whitespace": "warn",
+//     "no-regex-spaces": "off",
+//     "no-sparse-arrays": "warn",
+//     "no-unexpected-multiline": "warn",
+//     "no-unsafe-negation": "warn",
+//     "no-unsafe-finally": "warn",
+//     "no-unsafe-optional-chaining": "warn",
+//     "no-unsafe-regex": "off",
+//     "no-unsafe-assignment": "warn",
+//     "no-unsafe-return": "warn",
+//     "no-unsafe-iterator": "warn",
+//     "no-unsafe-member-access": "warn",
+//     "no-unsafe-call": "warn"
+//   }
+// }
